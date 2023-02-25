@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name= "ParticeProject.utilites.TestNGListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/Afshin Timory/IdeaProjects/QAdemo">
+        <classes>
+            <class name="ParticeProject.tests.TestNGDemo">
+                <methods>
+                    <include name="Test1"/>
+                    <include name="Test2"/>
+                    <include name="Test3"/>
+                    <include name="Test4"/>
+                    <include name="nameProvider"/>
+                    <include name="testParam"/>
+                    <parameter name="NewParam" value="Karim Bagheri"></parameter>
+
+                </methods>
+            </class>
+            <class name="ParticeProject.tests.Windows">
+                <methods>
+                    <include name="T01_SwitchToWindows"/>
+                    <include name="T02_ManageWindows"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite><!---->

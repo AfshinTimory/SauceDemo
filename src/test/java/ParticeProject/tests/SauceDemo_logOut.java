@@ -3,6 +3,7 @@ package ParticeProject.tests;
 import ParticeProject.base.OpenSite;
 import ParticeProject.pages.SauceDemo_LoginPage;
 import ParticeProject.pages.SuaceDemo_inventory;
+import ParticeProject.utilites.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -43,7 +44,9 @@ Assert.assertTrue(inventory.logOut_BtnPresent(), "LogOut Button in Present.");
         inventory.clickLogOut();
         Thread.sleep(2000);
         Assert.assertTrue(inventory.isLoginBtn_present(), "System logged Out successfully");
+
     }
+
 
 
 }
